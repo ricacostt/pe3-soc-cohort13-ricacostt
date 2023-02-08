@@ -13,5 +13,4 @@
 
 ## Lo-fi Wireframe representing next steps. 
 
-![Screenshot 2023-02-08 at 19 47 00](https://user-images.githubusercontent.com/111753918/217635638-bef489ab-0913-4976-b8a7-26e554e5fcc2.png). 
-
+![gnews](https://user-images.githubusercontent.com/111753918/217636353-5ce20569-9e15-4513-9636-b1475bbbe7e8.png)
