@@ -1,4 +1,5 @@
 import React from 'react'
+import './News.css'
 
 /**
  * 
@@ -7,24 +8,26 @@ import React from 'react'
  */
 function News({newsObj}) {
   return (
-    <>
-    <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><img src={newsObj.image} alt="news subjects" /></figure>
-          <div className="card-body">
-            <a  href={newsObj.url} target="_blank" className="card-title link link-secondary">
-              {newsObj.title}
-            </a>
-            <p style={{fontSize: "1rem"}}>{newsObj.description}</p>
-            <div className="card-actions justify-end">
-              {/* <div className="badge badge-outline">{newsObj.url}</div>  */}
-             <div className="badge badge-secondary">Date: {newsObj.publishedAt.slice(0,10)}</div>
-             <div className="badge badge-secondary">Time: {newsObj.publishedAt.slice(11,19)}</div>
-            </div>
-          </div>
-        </div>
-    <div>
+  
+    <div class="container">
+  <div class="card">
+    <div class="card-header">
+      <img src={newsObj.image} alt="news objects" />
     </div>
-    </>
+    <div class="card-body">
+      <a  href={newsObj.url} className="card-title link link-secondary">
+          {newsObj.title}
+        </a>
+      <p>
+       {newsObj.description}
+      </p>
+      <span class="tag tag-teal">Date: {newsObj.publishedAt.slice(0,10)}</span>
+      <span class="tag tag-teal">Time: {newsObj.publishedAt.slice(11,19)}</span>
+      
+      
+    </div>
+  </div>
+  </div>
   )
 }
 

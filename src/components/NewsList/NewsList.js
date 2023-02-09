@@ -9,10 +9,12 @@ import News from '../News/News';
 function NewsList({newsInfo}) {
     return newsInfo ? (
         <>
-          <div>
+          <div style={{  display: "flex",
+  flexDirection: "row", justifyContent:'center', flexWrap:"wrap" }}>
 
             {newsInfo.map((newsObj) => (
-              <div>
+              <div style={{  display: "flex",
+  flexDirection: "row", justifyContent:'center', flexWrap:"wrap" }}>
               <News newsObj={newsObj} key={newsObj.url}/>
               </div>
             ))}
