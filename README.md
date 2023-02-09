@@ -1,6 +1,6 @@
 # Percayso Programming Exercise 3
 
-## Visit the live version here: https://visionary-daffodil-f58b5c.netlify.app/
+## Visit the live version here: https://gnewss.netlify.app/
 
 ## Brief
 
