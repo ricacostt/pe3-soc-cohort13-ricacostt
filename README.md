@@ -12,7 +12,7 @@ There is a search bar that allows you to search for news items of interest to yo
 
 ## Tech Stack
 > Javascript, React.js, TailwindCSS, Daysi UI, Netlify, Miro, Figma       
- **Testing**: Jest, Cypress, GitHub Actions
+ **Testing**: Cypress, GitHub Actions
  
 ## Run Locally
 Clone the repo
