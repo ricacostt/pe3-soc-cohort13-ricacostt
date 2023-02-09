@@ -8,8 +8,8 @@
 ![Screenshot 2023-02-08 at 19 44 11](https://user-images.githubusercontent.com/111753918/217635075-01752a3e-66b3-4448-b5af-092778963a73.png). 
 
 ## Component Tree(actual). 
-![component](https://user-images.githubusercontent.com/111753918/217636875-2b7814bd-8160-49f2-a058-922dfa59db75.png)
 
+![componentree](https://user-images.githubusercontent.com/111753918/217782788-d83e349f-c49e-428d-9933-403e4411f477.png)
 
 ## Lo-fi Wireframe representing next steps. 
 
