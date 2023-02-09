@@ -6,7 +6,7 @@ function News({newsObj}) {
     <div className="card w-96 bg-base-100 shadow-xl">
           <figure><img src={newsObj.image} alt="news subjects" /></figure>
           <div className="card-body">
-            <a href={newsObj.url} className="card-title link link-secondary">
+            <a  href={newsObj.url} target="_blank" className="card-title link link-secondary">
               {newsObj.title}
             </a>
             <p style={{fontSize: "1rem"}}>{newsObj.description}</p>
