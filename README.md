@@ -2,6 +2,7 @@
 
 ## ✨ Live Version
 >Visit the live version here: https://gnewss.netlify.app/
+>it is possible that no results will show as the maximun of 100 requests are already been made.
 
 ## 📝 The plan
 >For plan strategy look at the plan.md file!
