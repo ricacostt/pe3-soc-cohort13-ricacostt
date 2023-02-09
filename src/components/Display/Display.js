@@ -18,9 +18,27 @@ const [search, setSearch] = useState("")
         setNewsInfo(response)
     },[response])
 
+function handleUserInput(e){
+    setUserInput(e.target.value.toLowerCase())
+}
+
+function handleClick(){
+    setSearch(userInput)
+    setUserInput("")
+}
+    useEffect(()=>{
+        getNewsByTitle(search)
+    },[search])
+
+    async function getNewsByTitle(title){
+        const response = await fetch(`https://gnews.io/api/v4/top-headlines?apikey=${apiKey}&q=${title}&lang=en`)
+        const data = await response.json()
+        setNewsInfo(data.articles)
+    }
+
   return (
     <div>
-    <SearchBar/>
+    <SearchBar userInput={userInput} handleUserInput={handleUserInput} handleClick={handleClick}/>
         <h1>TOP HEADLINES</h1>
         <NewsList newsInfo={newsInfo}/>
     </div>
