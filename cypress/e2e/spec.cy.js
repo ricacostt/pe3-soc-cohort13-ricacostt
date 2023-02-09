@@ -4,11 +4,16 @@ describe('visit the live website', () => {
   })
 })
 
-// describe('search bar functionality', () => {
+describe('search bar functionality', () => {
   
-//   it('search bar functionality', function() {
-// //     cy.get('.input input-bordered')
-// cy.get('.input-group > .btn')
-
-//   });
-// })
+  it('search bar functionality', function() {
+    cy.visit('https://gnewss.netlify.app/')
+cy.get('.input').click().type('Turkey')
+it('click the search button'), () =>{
+  cy.get('.btn').click()
+}
+it('click Gnews logo'), () =>{
+  cy.get('.flex-1 > .btn').click()
+}
+  });
+})
