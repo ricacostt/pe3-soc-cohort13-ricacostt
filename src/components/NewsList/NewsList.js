@@ -1,26 +1,21 @@
 import React from 'react'
 import News from '../News/News';
 
-function NewsList({news}) {
-    return news ? (
+function NewsList({newsInfo}) {
+    return newsInfo ? (
         <>
           <div>
 
-            {news.map((newsObj) => (
-              <News 
-
-              title={newsObj.title}
-                description={newsObj.description}
-                image={newsObj.image}
-                url={newsObj.url}
-                publishedAt={newsObj.publishedAt}
-              />
+            {newsInfo.map((newsObj) => (
+              <div>
+              <News newsObj={newsObj} key={newsObj.url}/>
+              </div>
             ))}
           </div>
         </>
       ) : (
-          ""
-          );
-        }
-
-export default NewsList
+        ""
+        );
+      }
+      
+      export default NewsList
