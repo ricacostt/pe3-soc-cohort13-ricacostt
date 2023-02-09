@@ -6,10 +6,13 @@ import './App.css';
 
 function App() {
   return (
+    <>
+    <div> <NavBar/></div>
+  
     <div className='App-header'>
-    <NavBar/>
       <Display/>
     </div>
+    </>
   )
 }
 

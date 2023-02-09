@@ -39,7 +39,7 @@ function handleClick(){
   return (
     <div>
     <SearchBar userInput={userInput} handleUserInput={handleUserInput} handleClick={handleClick}/>
-        <h1>TOP HEADLINES</h1>
+        <h1 className='text-2xl'>TOP HEADLINES</h1>
         <NewsList newsInfo={newsInfo}/>
     </div>
   )
