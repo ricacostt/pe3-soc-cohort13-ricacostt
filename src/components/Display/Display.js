@@ -11,7 +11,7 @@ const [search, setSearch] = useState("")
 
     const apiKey = "580a3a2c27940ac65a90cb0b9d5dc683"
 
-    const [response, error] = useGet(`https://gnews.io/api/v4/top-headlines?apikey=${apiKey}&q=none&lang=en`)
+    const [response] = useGet(`https://gnews.io/api/v4/top-headlines?apikey=${apiKey}&q=none&lang=en`)
 
 
     useEffect(()=>{
