@@ -9,9 +9,9 @@ const [userInput, setUserInput] = useState("")
 const [search, setSearch] = useState("")
 
 
-    const apiKey = "580a3a2c27940ac65a90cb0b9d5dc683"
+    const REACT_APP_APIKEY = "c0809fdae899b76d4a65482cae02505b"
 
-    const [response] = useGet(`https://gnews.io/api/v4/top-headlines?apikey=${apiKey}&q=none&lang=en`)
+    const [response] = useGet(`https://gnews.io/api/v4/top-headlines?apikey=${REACT_APP_APIKEY}&q=none&lang=en`)
 
 
     useEffect(()=>{
@@ -31,7 +31,7 @@ function handleClick(){
     },[search])
 
     async function getNewsByTitle(title){
-        const response = await fetch(`https://gnews.io/api/v4/top-headlines?apikey=${apiKey}&q=${title}&lang=en`)
+        const response = await fetch(`https://gnews.io/api/v4/top-headlines?apikey=${REACT_APP_APIKEY}&q=${title}&lang=en`)
         const data = await response.json()
         setNewsInfo(data.articles)
     }
