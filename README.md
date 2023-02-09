@@ -1,6 +1,38 @@
 # Percayso Programming Exercise 3
 
-## Visit the live version here: https://gnewss.netlify.app/
+## ✨ Live Version
+>Visit the live version here: https://gnewss.netlify.app/
+
+## 📝 The plan
+>For plan strategy look at the plan.md file!
+
+## 👉 The website
+>The website includes a collection of the current trending news in english, from all over the world and of all categories.  
+There is a search bar that allows you to search for news items of interest to you, just enter a keyword (ex. India) to receive all the news items where that keyword is present.
+
+## Tech Stack
+> Javascript, React.js, TailwindCSS, Daysi UI, Netlify, Miro, Figma       
+ **Testing**: Jest, Cypress, GitHub Actions
+ 
+## Run Locally
+Clone the repo
+```bash
+git clone https://github.com/PercaysoRecruitment/pe3-soc-cohort13-ricacostt.git
+```
+
+Add you personal .env file to include the api key.
+
+Install dependencies
+```bash
+  npm install
+```
+
+Start the server
+```bash
+  npm start
+```
+
+>Visit http://localhost:3000/, thank you!
 
 ## Brief
 
