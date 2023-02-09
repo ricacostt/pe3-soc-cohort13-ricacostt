@@ -1,6 +1,10 @@
 import React from "react";
 
-
+/**
+ * 
+ * @param {object} props 
+ * @returns a search bar with an input box where is handled the user typing and a button where is handle the click of the user
+ */
 function SearchBar(props) {
     const {handleUserInput, handleClick, userInput} = props
 

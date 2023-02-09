@@ -1,5 +1,10 @@
 import React from 'react'
 
+/**
+ * 
+ * @param {object} newsObj - the object containing all the info for each news
+ * @returns a card with an image, title, url to visit the website, description, date and time of publication
+ */
 function News({newsObj}) {
   return (
     <>
