@@ -63,7 +63,7 @@ function Display() {
         handleUserInput={handleUserInput}
         handleClick={handleClick}
       />
-      <h1 className="text-2xl">TOP HEADLINES</h1>
+    
       <NewsList newsInfo={newsInfo} />
     </div>
   );

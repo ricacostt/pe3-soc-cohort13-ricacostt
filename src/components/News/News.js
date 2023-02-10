@@ -1,6 +1,7 @@
 import React from 'react'
 import './News.css'
 
+
 /**
  * 
  * @param {object} newsObj - the object containing all the info for each news

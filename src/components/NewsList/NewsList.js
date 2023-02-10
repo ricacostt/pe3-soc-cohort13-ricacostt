@@ -1,5 +1,6 @@
 import React from 'react'
 import News from '../News/News';
+import { v4 as uuidv4 } from 'uuid';
 
 /**
  * 
@@ -10,14 +11,19 @@ function NewsList({newsInfo}) {
     return newsInfo ? (
         <>
           <div style={{  display: "flex",
-  flexDirection: "row", justifyContent:'center', flexWrap:"wrap" }}>
-
+  flexDirection: "column", justifyContent:'center', flexWrap:"wrap"}}>
+<div style={{display:'flex', justifyContent:'center' }}>
+        <h1>Top Headlines</h1>
+        </div>
+        <div style={{  display: "flex",
+  flexDirection: "row", justifyContent:'center', flexWrap:"wrap"}}>
             {newsInfo.map((newsObj) => (
               <div style={{  display: "flex",
   flexDirection: "row", justifyContent:'center', flexWrap:"wrap" }}>
-              <News newsObj={newsObj} key={newsObj.url}/>
+              <News newsObj={newsObj} key={uuidv4}/>
               </div>
             ))}
+              </div>
           </div>
         </>
       ) : (
