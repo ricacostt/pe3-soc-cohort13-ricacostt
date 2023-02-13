@@ -13,6 +13,7 @@ function Display() {
   //us state to set the userinput and the search
   const [userInput, setUserInput] = useState("");
   const [search, setSearch] = useState("");
+  const [isPending, setIsPending] = useState(true)
   //const [category, setCategory] = useState('general')
 //create a variable of api key that is taken from the .env file
   const APIKEY = process.env.REACT_APP_APIKEY;
@@ -24,6 +25,7 @@ function Display() {
 //set newsInfo to the response from the fetch and wrap it in a use effect to avoid side effects
   useEffect(() => {
     setNewsInfo(response);
+    setIsPending(false)
   }, [response]);
 
   /**
@@ -46,12 +48,13 @@ function Display() {
      * it fetch from the api with the title parameter that change depends on what the user input in the input area
      * @param {string} title 
      */
-    async function getNewsByTitle(title, category) {
+    async function getNewsByTitle(title) {
       const response = await fetch(
-        `https://gnews.io/api/v4/top-headlines?apikey=${APIKEY}&q=${title}&lang=en&category=${category}`
+        `https://gnews.io/api/v4/top-headlines?apikey=${APIKEY}&q=${title}&lang=en`
       ); 
       const data = await response.json();
       setNewsInfo(data.articles);
+      setIsPending(false)
     }
     getNewsByTitle(search);
   }, [search, APIKEY]);
@@ -64,8 +67,8 @@ function Display() {
         handleUserInput={handleUserInput}
         handleClick={handleClick}
       />
-    
-      <NewsList newsInfo={newsInfo} />
+    {isPending && <div>Loading...</div>}
+    {newsInfo && <NewsList newsInfo={newsInfo} /> }
     </div>
   );
 }
