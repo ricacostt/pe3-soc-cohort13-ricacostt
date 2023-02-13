@@ -1,6 +1,7 @@
 import React from 'react'
 
-function NavBar() {
+function NavBar(props) {
+  const {onClickGeneral, onClickWorld} = props
   return (
     <>
     <div className="navbar bg-secondary">
@@ -9,9 +10,9 @@ function NavBar() {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><button>General</button></li>
+      <li><button onClickGeneral={onClickGeneral}>General</button></li>
 
-      <li><button>World</button></li>
+      <li><button onClickWorld={onClickWorld}>World</button></li>
       <li><button>Nation</button></li>
       <li><button>Business</button></li>
       <li><button>Technology</button></li>

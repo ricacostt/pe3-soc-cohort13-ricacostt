@@ -13,6 +13,7 @@ function Display() {
   //us state to set the userinput and the search
   const [userInput, setUserInput] = useState("");
   const [search, setSearch] = useState("");
+  //const [category, setCategory] = useState('general')
 //create a variable of api key that is taken from the .env file
   const APIKEY = process.env.REACT_APP_APIKEY;
 //fetch data
@@ -41,20 +42,20 @@ function Display() {
 
   //call the function inside a useEffect to avoi side effects and set the dependencie 'search' as this function will run everytime the search change
   useEffect(() => {
+    /**
+     * it fetch from the api with the title parameter that change depends on what the user input in the input area
+     * @param {string} title 
+     */
+    async function getNewsByTitle(title, category) {
+      const response = await fetch(
+        `https://gnews.io/api/v4/top-headlines?apikey=${APIKEY}&q=${title}&lang=en&category=${category}`
+      ); 
+      const data = await response.json();
+      setNewsInfo(data.articles);
+    }
     getNewsByTitle(search);
-  }, [search]);
+  }, [search, APIKEY]);
 
-  /**
-   * it fetch from the api with the title parameter that change depends on what the user input in the input area
-   * @param {string} title 
-   */
-  async function getNewsByTitle(title) {
-    const response = await fetch(
-      `https://gnews.io/api/v4/top-headlines?apikey=${APIKEY}&q=${title}&lang=en`
-    );
-    const data = await response.json();
-    setNewsInfo(data.articles);
-  }
 
   return (
     <div>
