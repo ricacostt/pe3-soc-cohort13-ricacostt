@@ -18,7 +18,7 @@ function Display() {
 //create a variable of api key that is taken from the .env file
   const APIKEY = process.env.REACT_APP_APIKEY;
 //fetch data
-  const [response] = useGet(
+  const [response, error] = useGet(
     `https://gnews.io/api/v4/top-headlines?apikey=${APIKEY}&q=none&lang=en`
   );
 
@@ -67,6 +67,7 @@ function Display() {
         handleUserInput={handleUserInput}
         handleClick={handleClick}
       />
+      {error && <div>Error</div> }
     {isPending && <div>Loading...</div>}
     {newsInfo && <NewsList newsInfo={newsInfo} /> }
     </div>

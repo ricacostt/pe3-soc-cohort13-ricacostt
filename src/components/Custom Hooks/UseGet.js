@@ -20,7 +20,7 @@ export function useGet(url) {
           .catch((err)=> setError(err));
           
       } catch (error) {
-          
+          console.log(error.message)
       }
 
   },[url])
