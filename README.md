@@ -1,8 +1,8 @@
 # Percayso Programming Exercise 3
 
 ## ✨ Live Version
->Visit the live version here: https://gnewss.netlify.app/
->it is possible that no results will show as the maximun of 100 requests are already been made.
+>Visit the live version here: https://news-ricacostt.netlify.app/. 
+>If you don't see any results on the page, please try again tomorrow.
 
 ## 📝 The plan
 >For plan strategy look at the plan.md file!
@@ -13,7 +13,7 @@ There is a search bar that allows you to search for news items of interest to yo
 
 ## Tech Stack
 > Javascript, React.js, TailwindCSS, Daysi UI, Netlify, Miro, Figma       
- **Testing**: Cypress, GitHub Actions
+ **Testing**: Postman, Cypress, GitHub Actions
  
 ## Run Locally
 Clone the repo
@@ -35,11 +35,13 @@ Start the server
 
 >Visit http://localhost:3000/, thank you!
 
+
 ## Brief
 
 Create a website that gets news from the GNews api:
 
     https://gnews.io/?ref=apilist.fun
+    
     
 Your website must:    
       
