@@ -1,7 +1,8 @@
 
 ## Crud Models Plan
 
-![Screenshot 2023-02-08 at 19 42 31](https://user-images.githubusercontent.com/111753918/217634766-ba985388-af73-47f7-be8d-bc52cfc917e7.png). 
+<img width="459" alt="Screenshot 2023-02-13 at 14 33 27" src="https://user-images.githubusercontent.com/111753918/218471754-299c3d09-cc45-4aa4-a88f-4af5b21e0b28.png">
+
 
 ## Moscow Chart for MVP. 
 
